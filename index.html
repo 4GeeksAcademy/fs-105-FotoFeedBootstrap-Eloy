@@ -74,33 +74,107 @@
         </div>
     </div>
 
-    <div class="container-fluid p-2">
-        <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
+
+
+    <div class="d-flex justify-content-center">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
-                    role="tab" aria-controls="home" aria-selected="true"><i
-                        class="fa-solid fa-table-cells"></i></a>
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                class="fa-solid fa-table-cells"></i></button>
             </li>
             <li class="nav-item" role="presentation">
-                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
-                    role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
             </li>
         </ul>
-    </div>
+    </div>        
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <div class="row">
+                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSZ_J0623X0xTdsGWgrsKVc_aNKbXBewaxNsSVHSbeRqYOsXaquoN-Ffo8xlgLgsrjN3U&usqp=CAU" class="img-fluid w-100" alt=""></div>
+                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgjQuVJ2MNpgKkwN0eFkw6Cc7fNMcMuhHGW7PfARTSFrxnG4QdQKMIaiGCuBljMaX4ZCM&usqp=CAU" class="img-fluid w-100" alt=""></div>
+                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://static.wikia.nocookie.net/inter/images/7/77/Escudo_del_Inter_de_Mil%C3%A1n.png/revision/latest?cb=20180927121533&path-prefix=es" class="img-fluid w-100" alt=""></div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="row my-4">
+                    <div class="col-6 mx-auto border rounded p-0">
+                        <div class="d-flex p-2">
+                            <div class="w-100 fs-4">Primera equipación</div>
+                            <small class="align-bottom">08/12</small>
+                        </div>
+                        <img style="object-fit: cover;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSZ_J0623X0xTdsGWgrsKVc_aNKbXBewaxNsSVHSbeRqYOsXaquoN-Ffo8xlgLgsrjN3U&usqp=CAU" class="img-fluid w-100 col-12" alt=""/>
+                        <div class="p-2">
+                            <strong>250 Likes</strong>
+                            <p>This is an example of a very good photo that you can post on instagram</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-6 mx-auto border rounded p-0">
+                        <div class="d-flex p-2">
+                            <div class="w-100 fs-4">MVPs</div>
+                            <small>04/06</small>
+                        </div>
+                        <img style="object-fit: cover;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgjQuVJ2MNpgKkwN0eFkw6Cc7fNMcMuhHGW7PfARTSFrxnG4QdQKMIaiGCuBljMaX4ZCM&usqp=CAU" class="img-fluid w-100 col-12" alt=""/>
+                        <div class="p-2">
+                            <strong>269 Likes</strong>
+                            <p>This is an example of a very good photo that you can post on instagram</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-6 mx-auto border rounded p-0">
+                        <div class="d-flex p-2">
+                            <div class="w-100 fs-4">Escudo Inter de Milan</div>
+                            <small>07/12</small>
+                        </div>
+                        <img style="object-fit: cover;" src="https://static.wikia.nocookie.net/inter/images/7/77/Escudo_del_Inter_de_Mil%C3%A1n.png/revision/latest?cb=20180927121533&path-prefix=es" class="img-fluid w-100 col-12" alt=""/>
+                        <div class="p-2">
+                            <strong>500 Likes</strong>
+                            <p>This is an example of a very good photo that you can post on instagram</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- <nav class="navbar">
+        <div class="container-fluid">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+                    role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                        class="fa-solid fa-table-cells"></i></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+                    role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
 
     <!--Fotos en horizontal-->
-    <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <!-- <div class="tab-pane fade show active " id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
         <div class="row">
             <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSZ_J0623X0xTdsGWgrsKVc_aNKbXBewaxNsSVHSbeRqYOsXaquoN-Ffo8xlgLgsrjN3U&usqp=CAU" class="img-fluid w-100" alt=""></div>
             <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgjQuVJ2MNpgKkwN0eFkw6Cc7fNMcMuhHGW7PfARTSFrxnG4QdQKMIaiGCuBljMaX4ZCM&usqp=CAU" class="img-fluid w-100" alt=""></div>
             <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://static.wikia.nocookie.net/inter/images/7/77/Escudo_del_Inter_de_Mil%C3%A1n.png/revision/latest?cb=20180927121533&path-prefix=es" class="img-fluid w-100" alt=""></div>
         </div>
-    </div>
+    </div> -->
 
 
     <!--Fotos en vertical-->
 
-    <div class="tab-pane fade overflow-hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <!-- <div class="tab-pane fade overflow-hidden" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
         <div class="row my-4">
             <div class="col-6 mx-auto border rounded p-0">
                 <div class="d-flex p-2">
@@ -139,7 +213,7 @@
                     <p>This is an example of a very good photo that you can post on instagram</p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
 
